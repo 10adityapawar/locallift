@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LocalLift</title>
+  <meta name="description" content="Discover verified small businesses near ASU. Small shops. Big reach.">
+  <meta name="theme-color" content="#8C1D40">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LocalLift">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="LocalLift home">
+      <span id="brand-logo"></span><span class="brand-name">LocalLift</span>
+    </a>
+    <div class="mode-toggle" role="group" aria-label="App mode">
+      <button data-action="mode" data-mode="customer">Shop</button>
+      <button data-action="mode" data-mode="business">Business</button>
+    </div>
+    <button class="icon-btn" data-action="menu" aria-label="Demo menu">⋯</button>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+
+  <dialog id="menu" class="sheet">
+    <h2>LocalLift demo</h2>
+    <button class="btn ghost full" data-action="install">📲 Add to home screen</button>
+    <button class="btn ghost full" data-action="go" data-to="/welcome">🏠 Show welcome screen</button>
+    <button class="btn danger full" data-action="reset">↺ Reset demo</button>
+    <button class="btn full" data-action="close-menu">Close</button>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
