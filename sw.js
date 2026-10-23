@@ -1,6 +1,6 @@
 // Caches the app shell so LocalLift opens offline after the first visit.
 // Bump VERSION whenever you change any file so phones pick up the update.
-const VERSION = 'locallift-v1';
+const VERSION = 'locallift-v2';
 const SHELL = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ const SHELL = [
   './js/recommend.js',
   './js/ai.js',
   './js/charts.js',
+  './js/icons.js',
   './icons/icon.svg',
   './icons/icon-192.png',
   './icons/icon-512.png',

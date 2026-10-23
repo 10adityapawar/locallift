@@ -152,7 +152,7 @@ export function topProducts(biz, stats) {
   const seededTotal = biz.popularity ? stats.totals.taps - liveTaps.length : 0;
   return biz.products
     .map((p, i) => ({
-      label: `${p.emoji || '•'} ${p.name}`,
+      label: p.name,
       value: Math.max(0, Math.round((seededTotal * weights[i]) / wsum)) + liveTaps.filter(e => e.product === i).length,
     }))
     .sort((a, b) => b.value - a.value);
@@ -169,7 +169,7 @@ export function viewerInterests(biz) {
   }
   const total = Object.values(scores).reduce((a, b) => a + b, 0) || 1;
   return INTERESTS
-    .map(it => ({ id: it.id, label: `${it.emoji} ${it.label}`, value: Math.round((scores[it.id] / total) * 100) }))
+    .map(it => ({ id: it.id, label: it.label, value: Math.round((scores[it.id] / total) * 100) }))
     .filter(x => x.value > 0)
     .sort((a, b) => b.value - a.value)
     .slice(0, 5);

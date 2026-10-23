@@ -85,26 +85,26 @@ export function insights(biz, stats, interests, products) {
   const change = stats.prev.views ? (stats.totals.views - stats.prev.views) / stats.prev.views : 0;
 
   if (!stats.totals.views) {
-    tips.push({ icon: '🚀', text: 'Your profile is brand new. Add 3+ products and a deal. Profiles with deals get about 2× more taps in the first week.' });
-    tips.push({ icon: '📸', text: 'Write a bio with the AI Profile Assistant. Clear bios help the For You feed match you to the right shoppers.' });
+    tips.push({ icon: 'store', text: 'Your profile is brand new. Add 3+ products and a deal. Profiles with deals get about 2× more taps in the first week.' });
+    tips.push({ icon: 'pen', text: 'Write a bio with the Writing Assistant. Clear bios help the For You feed match you to the right shoppers.' });
     return tips;
   }
 
   if (interests[0]) {
     const top = interests[0];
-    tips.push({ icon: '🎯', text: `${top.value}% of your viewers are into ${top.label.replace(/^\S+\s/, '')}. Feature something for them at the top of your profile.` });
+    tips.push({ icon: 'target', text: `${top.value}% of your viewers are into ${top.label}. Feature something for them at the top of your profile.` });
   }
   if (products[0] && products.length > 1) {
-    tips.push({ icon: '⭐', text: `"${products[0].label.replace(/^\S+\s/, '')}" gets the most taps. Try a bundle deal with your least-tapped item.` });
+    tips.push({ icon: 'star', text: `"${products[0].label}" gets the most taps. Try a bundle deal with your least-tapped item.` });
   }
-  if (change > 0.05) tips.push({ icon: '📈', text: `Views are up ${Math.round(change * 100)}% vs. the previous ${stats.days} days. Keep posting deals while momentum is high.` });
-  else if (change < -0.05) tips.push({ icon: '📉', text: `Views dipped ${Math.round(-change * 100)}%. A limited-time deal is the fastest way to get back in the For You feed.` });
-  if (!biz.deal) tips.push({ icon: '🏷️', text: 'You have no active deal. Shops with a deal show up in the Deals tab and get a For You boost.' });
+  if (change > 0.05) tips.push({ icon: 'trending', text: `Views are up ${Math.round(change * 100)}% vs. the previous ${stats.days} days. Keep posting deals while momentum is high.` });
+  else if (change < -0.05) tips.push({ icon: 'trendingDown', text: `Views dipped ${Math.round(-change * 100)}%. A limited-time deal is the fastest way to get back in the For You feed.` });
+  if (!biz.deal) tips.push({ icon: 'tag', text: 'You have no active deal. Shops with a deal show up in the Deals tab and get a For You boost.' });
 
   const tapRate = stats.totals.views ? stats.totals.taps / stats.totals.views : 0;
-  if (tapRate < 0.3) tips.push({ icon: '🖼️', text: `Only ${Math.round(tapRate * 100)}% of viewers tap a product. Add clearer product names and prices.` });
+  if (tapRate < 0.3) tips.push({ icon: 'package', text: `Only ${Math.round(tapRate * 100)}% of viewers tap a product. Add clearer product names and prices.` });
   const missing = interests.map(i => i.id).filter(id => !biz.tags.includes(id));
-  if (missing[0]) tips.push({ icon: '🏷️', text: `Many viewers also like ${interestLabel[missing[0]]}. Adding that tag could put you in more feeds.` });
+  if (missing[0]) tips.push({ icon: 'tag', text: `Many viewers also like ${interestLabel[missing[0]]}. Adding that tag could put you in more feeds.` });
 
   return tips.slice(0, 4);
 }

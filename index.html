@@ -15,19 +15,22 @@
   <meta name="apple-mobile-web-app-title" content="LocalLift">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#/" aria-label="LocalLift home">
-      <span id="brand-logo"></span><span class="brand-name">LocalLift</span>
-    </a>
-    <div class="mode-toggle" role="group" aria-label="App mode">
-      <button data-action="mode" data-mode="customer">Shop</button>
-      <button data-action="mode" data-mode="business">Business</button>
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="LocalLift home">
+        <span id="brand-logo"></span><span class="brand-name">LocalLift</span>
+      </a>
+      <nav class="topnav" id="topnav" aria-label="Main"></nav>
+      <div class="mode-toggle" role="group" aria-label="App mode">
+        <button data-action="mode" data-mode="customer">Shop</button>
+        <button data-action="mode" data-mode="business">Business</button>
+      </div>
+      <button class="icon-btn" data-action="menu" aria-label="Demo menu" id="menu-btn"></button>
     </div>
-    <button class="icon-btn" data-action="menu" aria-label="Demo menu">⋯</button>
   </header>
 
   <main id="app" class="container"></main>
@@ -35,11 +38,8 @@
   <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
 
   <dialog id="menu" class="sheet">
-    <h2>LocalLift demo</h2>
-    <button class="btn ghost full" data-action="install">📲 Add to home screen</button>
-    <button class="btn ghost full" data-action="go" data-to="/welcome">🏠 Show welcome screen</button>
-    <button class="btn danger full" data-action="reset">↺ Reset demo</button>
-    <button class="btn full" data-action="close-menu">Close</button>
+    <h2>Demo options</h2>
+    <div class="sheet-list" id="menu-list"></div>
   </dialog>
 
   <div id="toast" role="status" aria-live="polite"></div>
