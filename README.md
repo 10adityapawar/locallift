@@ -1,5 +1,7 @@
 # LocalLift: Small shops. Big reach.
 
+**Live demo:** https://10adityapawar.github.io/locallift/
+
 A clickable demo app for our WPC 101 Spark Tank pitch. LocalLift lists **only verified small businesses**. Shoppers find them by location and interest, and owners see who's viewing them and get AI help with their profile.
 
 It's a web app that you can also **add to your phone's home screen** (a "PWA"). It works offline after the first visit. Everything is fake demo data around ASU Tempe, so there are no accounts and no server database.
