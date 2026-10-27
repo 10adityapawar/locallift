@@ -74,7 +74,7 @@ export function createBusiness(fields) {
   const angle = Math.random() * Math.PI * 2;
   const dist = 0.004 + Math.random() * 0.01;
   const biz = {
-    id, emoji: '🏪', color: '#8C1D40', tags: [], products: [], deal: null,
+    id, emoji: '🏪', color: '#16294A', tags: [], products: [], deal: null,
     tagline: 'New on Orbit!', bio: '',
     lat: ORIGIN.lat + Math.sin(angle) * dist, lng: ORIGIN.lng + Math.cos(angle) * dist,
     hours: [9, 18], rating: 5.0, reviews: 0, priceLevel: 1, founded: new Date().getFullYear(),

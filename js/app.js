@@ -909,11 +909,14 @@ function toast(msg, ms = 2400) {
 
 export function logoSvg(size = 32) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 512 512" aria-hidden="true">
-    <rect width="512" height="512" rx="112" fill="#8C1D40"/>
-    <circle cx="256" cy="256" r="150" fill="none" stroke="#FFC627" stroke-width="28"/>
-    <circle cx="256" cy="256" r="78" fill="#fff"/>
-    <circle cx="362" cy="150" r="48" fill="#8C1D40"/>
-    <circle cx="362" cy="150" r="32" fill="#FFC627"/>
+    <rect width="512" height="512" rx="112" fill="#16294A"/>
+    <g fill="none" stroke="#9CC7FA" stroke-linecap="round">
+      <path d="M106.1 261.2A150 150 0 0 1 362.1 149.9" stroke-width="30"/>
+      <path d="M405.9 250.8A150 150 0 0 1 149.9 362.1" stroke-width="30"/>
+      <circle cx="256" cy="256" r="46" stroke-width="26"/>
+      <circle cx="362.1" cy="149.9" r="26" fill="#16294A" stroke-width="18"/>
+      <circle cx="149.9" cy="362.1" r="26" fill="#16294A" stroke-width="18"/>
+    </g>
   </svg>`;
 }
 
