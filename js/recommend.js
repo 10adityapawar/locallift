@@ -58,7 +58,7 @@ export function rankForYou(businesses, state) {
 
       if (b.deal) {
         score += 1.2;
-        reasons.push({ w: 1.2, text: 'Has a LocalLift deal' });
+        reasons.push({ w: 1.2, text: 'Has an Orbit deal' });
       }
 
       score += (b.rating - 4.5) * 2;
@@ -67,7 +67,7 @@ export function rankForYou(businesses, state) {
       if (isOpen(b)) score += 0.5;
       if (b.isNew) {
         score += 1.5;
-        reasons.push({ w: 1.5, text: 'New on LocalLift' });
+        reasons.push({ w: 1.5, text: 'New on Orbit' });
       }
 
       reasons.sort((x, y) => y.w - x.w);

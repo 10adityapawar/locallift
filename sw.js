@@ -1,6 +1,6 @@
-// Caches the app shell so LocalLift opens offline after the first visit.
+// Caches the app shell so Orbit opens offline after the first visit.
 // Bump VERSION whenever you change any file so phones pick up the update.
-const VERSION = 'locallift-v2';
+const VERSION = 'orbit-v3';
 const SHELL = [
   './',
   './index.html',

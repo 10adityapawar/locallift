@@ -1,6 +1,6 @@
 {
-  "name": "LocalLift: Small shops. Big reach.",
-  "short_name": "LocalLift",
+  "name": "Orbit: Small shops. Big reach.",
+  "short_name": "Orbit",
   "description": "Discover verified small businesses near ASU.",
   "start_url": "./index.html",
   "scope": "./",

@@ -295,10 +295,10 @@ function viewDeals() {
   const withDeals = store.allBusinesses().filter(b => b.deal).sort((a, b) => milesFrom(a) - milesFrom(b));
   const red = S().redeemed;
   return `
-  ${pageHead('Deals', 'Offers from local businesses, available only on LocalLift')}
+  ${pageHead('Deals', 'Offers from local businesses, available only on Orbit')}
   <div class="notice">
     <div class="notice-icon">${icon('gift', 20)}</div>
-    <div><strong>Welcome offer</strong><p>Get 10% off your first purchase at any LocalLift business. It stacks with the deals below.</p></div>
+    <div><strong>Welcome offer</strong><p>Get 10% off your first purchase at any Orbit business. It stacks with the deals below.</p></div>
   </div>
   <div class="card-grid">
   ${withDeals.map(b => {
@@ -383,7 +383,7 @@ function viewBiz(id) {
     <aside class="biz-side">
       ${b.deal ? `
       <section class="panel deal-panel">
-        <p class="eyebrow">${icon('tag', 14)} LocalLift deal</p>
+        <p class="eyebrow">${icon('tag', 14)} Orbit deal</p>
         <h3>${esc(b.deal.title)}</h3>
         <p class="small muted">${esc(b.deal.detail)}</p>
         ${st.redeemed.includes(b.id) ? `<div class="coupon"><span>Code</span><strong>${esc(b.deal.code)}</strong></div>` : `<button class="btn primary full" data-action="redeem" data-id="${b.id}">Reveal code</button>`}
@@ -855,7 +855,7 @@ const forms = {
     const d = Object.fromEntries(new FormData(f));
     const b = ownedBiz();
     const code = (b.name.replace(/[^a-z]/gi, '').slice(0, 5) + Math.floor(10 + Math.random() * 89)).toUpperCase();
-    saveOverride(b, { deal: { title: d.title.trim(), detail: 'Show your LocalLift app at checkout.', code } });
+    saveOverride(b, { deal: { title: d.title.trim(), detail: 'Show your Orbit app at checkout.', code } });
     toast('Deal posted');
     rerender();
   },
@@ -910,10 +910,10 @@ function toast(msg, ms = 2400) {
 export function logoSvg(size = 32) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 512 512" aria-hidden="true">
     <rect width="512" height="512" rx="112" fill="#8C1D40"/>
-    <rect x="140" y="222" width="232" height="150" fill="#fff"/>
-    <rect x="226" y="290" width="60" height="82" rx="6" fill="#8C1D40"/>
-    <path d="M140 150h232l24 72H116z" fill="#FFC627"/>
-    ${[144, 200, 256, 312, 368].map(x => `<path d="M${x - 28} 222a28 28 0 0 0 56 0z" fill="#FFC627"/>`).join('')}
+    <circle cx="256" cy="256" r="150" fill="none" stroke="#FFC627" stroke-width="28"/>
+    <circle cx="256" cy="256" r="78" fill="#fff"/>
+    <circle cx="362" cy="150" r="48" fill="#8C1D40"/>
+    <circle cx="362" cy="150" r="32" fill="#FFC627"/>
   </svg>`;
 }
 

@@ -1,8 +1,8 @@
-# LocalLift: Small shops. Big reach.
+# Orbit: Small shops. Big reach.
 
 **Live demo:** https://10adityapawar.github.io/locallift/
 
-A clickable demo app for our WPC 101 Spark Tank pitch. LocalLift lists **only verified small businesses**. Shoppers find them by location and interest, and owners see who's viewing them and get AI help with their profile.
+A clickable demo app for our WPC 101 Spark Tank pitch. Orbit lists **only verified small businesses**. Shoppers find them by location and interest, and owners see who's viewing them and get AI help with their profile.
 
 It's a web app that you can also **add to your phone's home screen** (a "PWA"). It works offline after the first visit. Everything is fake demo data around ASU Tempe, so there are no accounts and no server database.
 
@@ -27,7 +27,7 @@ Phones only let you "Add to Home Screen" as an app from an `https://` site. Eith
 
 ### Install on a phone
 - **iPhone (Safari):** open the link → Share button → **Add to Home Screen**.
-- **Android (Chrome):** open the link → ⋮ menu → **Install app**. You can also use **⋯ → Add to home screen** inside LocalLift.
+- **Android (Chrome):** open the link → ⋮ menu → **Install app**. You can also use **⋯ → Add to home screen** inside Orbit.
 
 ## What's in the demo
 

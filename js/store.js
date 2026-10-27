@@ -2,7 +2,7 @@
 // plus any live events created by tapping around in Shop mode.
 import { BUSINESSES, INTERESTS, ORIGIN } from './data.js';
 
-const KEY = 'locallift-demo-v1';
+const KEY = 'orbit-demo-v1';
 const DAY = 86400000;
 const HISTORY_DAYS = 60;
 
@@ -75,7 +75,7 @@ export function createBusiness(fields) {
   const dist = 0.004 + Math.random() * 0.01;
   const biz = {
     id, emoji: '🏪', color: '#8C1D40', tags: [], products: [], deal: null,
-    tagline: 'New on LocalLift!', bio: '',
+    tagline: 'New on Orbit!', bio: '',
     lat: ORIGIN.lat + Math.sin(angle) * dist, lng: ORIGIN.lng + Math.cos(angle) * dist,
     hours: [9, 18], rating: 5.0, reviews: 0, priceLevel: 1, founded: new Date().getFullYear(),
     popularity: 0, isNew: true,

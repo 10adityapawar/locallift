@@ -2,7 +2,7 @@
 // To rename the app, change APP.name here and in index.html + manifest.webmanifest.
 
 export const APP = {
-  name: 'LocalLift',
+  name: 'Orbit',
   slogan: 'Small shops. Big reach.',
 };
 
@@ -63,7 +63,7 @@ export const BUSINESSES = [
     tags: ['coffee', 'sweets', 'handmade'], lat: 33.4190, lng: -111.9355, area: 'Hayden Lawn',
     hours: [7, 15], rating: 4.9, reviews: 212, priceLevel: 1, employees: 4, revenue: 140000, founded: 2023, owner: 'Maya',
     popularity: 46,
-    deal: { title: '15% off any drink', detail: 'Show your LocalLift app at the cart.', code: 'SIPS15' },
+    deal: { title: '15% off any drink', detail: 'Show your Orbit app at the cart.', code: 'SIPS15' },
     products: [
       { name: 'Prickly Pear Cold Brew', price: 5.5, emoji: '🌵', desc: 'Slow-steeped 18 hours with a splash of real prickly pear syrup.' },
       { name: 'Horchata Latte', price: 5.75, emoji: '🥛', desc: 'Espresso, house horchata and a dusting of cinnamon.' },
