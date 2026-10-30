@@ -1,6 +1,6 @@
 # Orbit: Small shops. Big reach.
 
-**Live demo:** https://10adityapawar.github.io/locallift/
+**Live demo:** https://orbit-asu.github.io/
 
 A clickable demo app for our WPC 101 Spark Tank pitch. Orbit lists **only verified small businesses**. Shoppers find them by location and interest, and owners see who's viewing them and get AI help with their profile.
 
