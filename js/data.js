@@ -42,12 +42,12 @@ export const PLANS = [
     features: ['Verified small-business profile', 'Show up in Discover & Map', 'Total profile views', 'Post 1 deal a month'],
   },
   {
-    id: 'pro', name: 'Pro', price: 14.99, popular: true,
+    id: 'pro', name: 'Pro', price: 49.99, popular: true,
     blurb: 'Know your customers.',
     features: ['Everything in Starter', 'Full analytics dashboard', '"Who viewed you" insights', 'AI Profile Assistant', 'Unlimited deals'],
   },
   {
-    id: 'growth', name: 'Growth', price: 29.99,
+    id: 'growth', name: 'Growth', price: 79.99,
     blurb: 'Get in front of more people.',
     features: ['Everything in Pro', 'Boosted For You placement', 'Weekly AI growth tips', 'Campus event spotlight', 'Priority support'],
   },

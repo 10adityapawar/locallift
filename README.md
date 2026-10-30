@@ -37,7 +37,7 @@ Phones only let you "Add to Home Screen" as an app from an `https://` site. Eith
 | **Discover**: search, category filters, Open now / Has deal, and a mini map around the MU | **Who viewed you**: anonymous shoppers' interests and distance |
 | **Deals**: unlock coupon codes, plus a welcome offer | **AI insights**: tips based on your own data |
 | **Shop profiles** with the Verified Small Business badge | **AI Profile Assistant**: writes 3 bio options, suggests tags and writes product descriptions |
-| **Saved** favorites | **Plans**: Starter (free), Pro $14.99/mo, Growth $29.99/mo, with a 50% off launch promo |
+| **Saved** favorites | **Plans**: Starter (free), Pro $49.99/mo, Growth $79.99/mo, with a 50% off launch promo |
 | | **List your business**: the small-business check (must be under $1M in sales and under 50 employees) |
 
 Use the **Shop / Business** toggle at the top to switch sides. Use **⋯ → Reset demo** before every presentation.
@@ -49,7 +49,7 @@ Use the **Shop / Business** toggle at the top to switch sides. Use **⋯ → Res
 3. Switch to **Business**. The dashboard shows **"live today"** and the *Shopper on this device* row with a LIVE tag. *"That was us, a second ago. Owners see who's interested, not just how many."*
 4. **Profile → ✨ Write my bio.** *"Most small-business owners aren't marketers, so AI writes the profile for them."*
 5. **Dashboard → ＋ List another business.** Enter a giant company (e.g. $50,000,000 sales, 2,000 employees) and show the rejection. *"No chains allowed. That's our differentiator."*
-6. Finish on **Plans**. *"Free to join, $14.99 a month for the tools that grow you."*
+6. Finish on **Plans**. *"Free to join, $49.99 a month for the tools that grow you."*
 
 ## Change things
 

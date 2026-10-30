@@ -1,6 +1,6 @@
 // Caches the app shell so Orbit opens offline after the first visit.
 // Bump VERSION whenever you change any file so phones pick up the update.
-const VERSION = 'orbit-v4';
+const VERSION = 'orbit-v5';
 const SHELL = [
   './',
   './index.html',
